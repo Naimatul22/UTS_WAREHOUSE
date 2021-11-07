@@ -1,0 +1,26 @@
+pada dim_orders
+mengambil orderdate(tanggal order) ditabel order
+mengambil requiredDate ditabel order 
+mengambil shippesDate(tanggal kirim) ditabel order
+mengambil status ditabel order untuk mengatahui status pemesanan
+mengambil comments dan mengambil cystomerNumber dari tambel order
+
+pada dim_payment
+mengambil id (customer_number) dari tabel payments utnuk mngetahui id customernya
+mengambil check number dari tabel payment
+mengambil paymentDate atau tanggal pembayaran dari tabel payments
+mengambil amount untuk mengetahui harga produk
+
+pada dim_products
+mengambil kode produk(produkCode) pada tabel products
+mengambil nama produk (productName) pada tabel products untuk mengetahui nama produknya
+mengambil product line pada tabel products 
+mengambil productScale pada tabel products
+mengambil productVendor pada tabel products
+mengambil deskriptions. quantyti in stock, buyprice, dan MSRP pada tabel products
+
+pada fact_penjualan
+mengambil sk_orders dari dim_orders
+mengambil sk_product dari dim_products
+mangambil sk_payments dari dim_payments
+ketiganya dibuat agar bisa diakses masing masing tabel dimnya
